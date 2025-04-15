@@ -1,0 +1,303 @@
+
+html {
+  font-family: Arial, Helvetica;
+}
+
+body {
+  background-color: bisque;
+}
+
+/* Styling for the v-else container */
+.else-container {
+  text-align: center; /* Center-align the content */
+  margin: 20px auto; /* Add vertical spacing and center horizontally */
+  padding: 20px; /* Add padding inside the container */
+  max-width: 1000px; /* Limit the width of the container */
+}
+
+/* Styling for the link inside the v-else container */
+.else-container a {
+  display: inline-block; /* Make the link behave like a button */
+  font-size: 1.2em; /* Increase font size */
+  background-color: #f9f9f9; /* Light background color */
+  color: #007acc; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add padding to the link */
+  border: 1px solid #007acc; /* Add a border matching the link color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.5s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the link */
+.else-container a:hover {
+  background-color: #007acc; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Styling for the <Content /> component */
+.else-container .content {
+  margin-top: 20px; /* Add spacing above the content */
+  font-size: 1em; /* Set font size */
+  color: #333; /* Set text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* TITLE PAGE */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  margin-bottom: 5rem; /* Adds space below the hero section */
+}
+
+/* .hero h1 {
+  font-size: 4em;
+  margin: 4rem; /* Removes default margin */
+/* }  */
+
+/* .hero h2 {
+  font-size: 1.5em;
+} */
+
+.hero p {
+  font-size: 1em;
+  text-align: center; /* Centers the text */
+ max-width: 600px;   /*Optional: Limits the width of the paragraph */
+}
+/* .card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+} */
+
+/* .featuresrow {
+  padding: 5rem;
+} */
+/* .row {
+  padding: 5rem;
+} */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05); /* Slightly lift and scale the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0; /* Round the top corners of the image */
+  transition: transform 0.3s ease; /* Smooth transition for image hover effect */
+}
+
+
+
+/* Responsive Styles */
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.5em;
+    margin: 3rem;
+    /* text-align: center; */
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1em;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .ep-content p {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .ep-content .list-group-item {
+    text-align: left;
+  }
+
+  .row {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push content to top and bottom */
+    height: 100%; /* Ensure all cards have the same height */
+    align-items: center; /* Center align items */
+  }
+
+  .card-body h5 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .card-body .card-text {
+    font-size: 1em;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 30%; /* Prevents the button from stretching */
+
+  }
+
+  .features.row {
+    padding: 2rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet (max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 4em;
+    margin: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    max-width: 90%;
+  }
+
+  .ep-content p {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .ep-content .list-group-item {
+    text-align: left;
+  }
+
+  .row {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push content to top and bottom */
+    height: 100%; /* Ensure all cards have the same height */
+    align-items: center; /* Center align items */
+  }
+
+  .card-body h5 {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .card-body .card-text {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 35%; /* Prevents the button from stretching */
+  }
+
+  
+
+  .card-body {
+    padding: 1.8rem;
+  }
+}
+
+/* Desktop (min-width: 769px) */
+@media (min-width: 769px) {
+
+  .hero h1 {
+    font-size: 4em;
+    margin: 4rem;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+  }
+
+  
+  .ep-content p {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .ep-content .list-group-item {
+    text-align: left;
+  }
+
+  .row {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push content to top and bottom */
+    height: 100%; /* Ensure all cards have the same height */
+  }
+
+  .card-body h5 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .card-body .card-text {
+    font-size: 1em;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    align-self: center; 
+    
+  }
+
+  .features.row {
+    width: 80%;
+    margin: 0 auto; /* Center the row */
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+}
+
+
+

@@ -1,0 +1,23 @@
+---
+layout: Content-category
+
+hero:
+    name: "Dei’s Unsolicited Advice"
+    text: "Questionable life tips, hard truths, or sarcastic how-tos."
+    tagline: Bad decisions? I’ve made them. Good advice? Debatable. Welcome to a place where common sense is optional, but sarcasm is guaranteed.
+
+features:
+  - title: Episode 3
+    thumbnail: https://img.youtube.com/vi/31a8ajCBBGA/0.jpg
+    details: Why hustling 24/7 might be ruining your life instead of improving it.
+    link: /UA/ep3
+  - title: Episode 2
+    thumbnail: https://img.youtube.com/vi/04cRCzyOf80/0.jpg
+    details: If they left you on read, consider it a free life lesson.
+    link: /UA/ep2
+  - title: Episode 1
+    thumbnail: https://img.youtube.com/vi/jdo5g9ctkAk/0.jpg
+    details: Making mistakes is an art form—and I’m Picasso.
+    link: /UA/ep1
+  
+---
