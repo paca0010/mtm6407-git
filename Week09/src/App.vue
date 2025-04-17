@@ -1,6 +1,9 @@
 <script setup>
 import ContactForm from './components/ContactForm.vue';
 import CarSelector from './components/CarSelector.vue';
+import Greeting from './components/greeting.vue';
+import UsersList from './components/UsersList.vue';
+
 import { ref } from 'vue';
 
 const count = ref(0);
@@ -36,6 +39,7 @@ const handleControlKey = (e) => {
   console.log(e)
 }
 
+const showGreeting = ref(true);
 
 </script>
 
@@ -49,7 +53,7 @@ const handleControlKey = (e) => {
  <!-- Keyboard Events (using a conditional within funtional scope)-->
   <form>
     <textarea @keyup="handleSave" class="text-editor"></textarea>
-  </form>
+  </form> 
 
 <!-- Keyboard Events (shorthand)-->
   <form>
@@ -59,6 +63,17 @@ const handleControlKey = (e) => {
   <ContactForm/>
 
   <CarSelector />
+
+  <div class="mount-test">
+
+    <button @click="showGreeting = !showGreeting">
+      {{ showGreeting ? 'Hide' : 'Show' }}
+    </button>
+    <Greeting v-if="showGreeting" />
+
+  </div>
+
+  <UsersList />
 
 </template>
 
@@ -79,5 +94,9 @@ const handleControlKey = (e) => {
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
+}
+
+.mount-test {
+  margin-top: 20px;
 }
 </style>
